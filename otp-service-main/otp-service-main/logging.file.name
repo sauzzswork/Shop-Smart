@@ -1,0 +1,593 @@
+2024-10-23 15:39:33 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 93900 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:39:33 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:39:33 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:39:33 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:39:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:39:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:39:33 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:39:33 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:39:33 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:39:33 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:39:33 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:39:33 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 487 ms
+2024-10-23 15:39:33 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'otpController': Unsatisfied dependency expressed through field 'otpService': Error creating bean with name 'otpService' defined in file [/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes/sg/edu/nus/iss/otp_service/service/OtpService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-23 15:39:33 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-23 15:39:33 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-23 15:39:33 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in sg.edu.nus.iss.otp_service.service.OtpService required a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' in your configuration.
+
+2024-10-23 15:39:36 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 93978 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:39:36 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:39:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:39:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:39:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:39:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:39:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:39:37 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:39:37 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:39:37 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:39:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:39:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 542 ms
+2024-10-23 15:39:37 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'otpController': Unsatisfied dependency expressed through field 'otpService': Error creating bean with name 'otpService' defined in file [/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes/sg/edu/nus/iss/otp_service/service/OtpService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-23 15:39:37 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-23 15:39:37 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-23 15:39:37 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in sg.edu.nus.iss.otp_service.service.OtpService required a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' in your configuration.
+
+2024-10-23 15:39:50 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 94152 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:39:50 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:39:50 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:39:50 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:39:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:39:50 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:39:50 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:39:50 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:39:50 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:39:50 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:39:50 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:39:50 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 527 ms
+2024-10-23 15:39:50 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'otpController': Unsatisfied dependency expressed through field 'otpService': Error creating bean with name 'otpService' defined in file [/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes/sg/edu/nus/iss/otp_service/service/OtpService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-23 15:39:50 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-23 15:39:50 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-23 15:39:50 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in sg.edu.nus.iss.otp_service.service.OtpService required a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' in your configuration.
+
+2024-10-23 15:41:30 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 95502 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:41:30 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:41:30 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:41:30 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:41:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:41:30 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:41:30 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:41:30 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:41:30 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:41:30 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:41:30 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:41:30 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 590 ms
+2024-10-23 15:41:31 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'otpController': Unsatisfied dependency expressed through field 'otpService': Error creating bean with name 'otpService' defined in file [/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes/sg/edu/nus/iss/otp_service/service/OtpService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-23 15:41:31 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-23 15:41:31 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-23 15:41:31 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in sg.edu.nus.iss.otp_service.service.OtpService required a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' in your configuration.
+
+2024-10-23 15:42:37 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 96420 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:42:37 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:42:37 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:42:37 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:42:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:42:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:42:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:42:37 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 0 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:42:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:42:38 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:42:38 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:42:38 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:42:38 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:42:38 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 520 ms
+2024-10-23 15:42:38 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'otpController': Unsatisfied dependency expressed through field 'otpService': Error creating bean with name 'otpService' defined in file [/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes/sg/edu/nus/iss/otp_service/service/OtpService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-23 15:42:38 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-23 15:42:38 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-23 15:42:38 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in sg.edu.nus.iss.otp_service.service.OtpService required a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' in your configuration.
+
+2024-10-23 15:43:16 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 96983 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:43:16 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:43:16 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:43:16 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:43:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:43:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:43:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:43:16 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 1 MongoDB repository interface.
+2024-10-23 15:43:17 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:43:17 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:43:17 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:43:17 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:43:17 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:43:17 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 549 ms
+2024-10-23 15:43:17 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.6.1"}, "platform": "Java/Oracle Corporation/22.0.1+8-16"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='Rishi', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@402278e0, com.mongodb.Jep395RecordCodecProvider@35d76a72, com.mongodb.KotlinCodecProvider@2064a925]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=shopsmart.ubphc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-xoqf9h-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-10-23 15:43:17 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-23 15:43:17 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-01.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:43:17 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-00.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:43:17 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-02.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:43:21 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:43:21 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-23 15:43:21 INFO  s.e.n.i.o.OtpServiceApplication - Started OtpServiceApplication in 5.508 seconds (process running for 5.747)
+2024-10-23 15:43:31 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-01.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:43:31 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-00.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:43:31 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-02.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:43:40 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 97273 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:43:40 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:43:40 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:43:40 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:43:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:43:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:43:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:43:40 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 1 MongoDB repository interface.
+2024-10-23 15:43:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:43:40 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:43:40 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:43:40 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:43:41 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:43:41 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 597 ms
+2024-10-23 15:43:41 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.6.1"}, "platform": "Java/Oracle Corporation/22.0.1+8-16"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='Rishi', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@44ad87e7, com.mongodb.Jep395RecordCodecProvider@3b60f570, com.mongodb.KotlinCodecProvider@13c8a9a5]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=shopsmart.ubphc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-xoqf9h-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-10-23 15:43:41 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-01.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:43:41 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-00.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:43:41 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-02.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:43:41 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-23 15:43:41 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:43:41 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-23 15:43:41 INFO  s.e.n.i.o.OtpServiceApplication - Started OtpServiceApplication in 1.233 seconds (process running for 1.418)
+2024-10-23 15:43:51 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-00.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:43:51 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-01.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:43:51 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-02.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:44:11 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 97693 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:44:11 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:44:11 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:44:11 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:44:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:44:11 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1 ms. Found 0 MongoDB repository interfaces.
+2024-10-23 15:44:11 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:44:11 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:44:11 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:44:11 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:44:11 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:44:11 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 501 ms
+2024-10-23 15:44:11 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'otpController': Unsatisfied dependency expressed through field 'otpService': Error creating bean with name 'otpService' defined in file [/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes/sg/edu/nus/iss/otp_service/service/OtpService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-10-23 15:44:11 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-10-23 15:44:11 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-10-23 15:44:11 ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in sg.edu.nus.iss.otp_service.service.OtpService required a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'sg.edu.nus.iss.otp_service.repository.OtpRepository' in your configuration.
+
+2024-10-23 15:45:14 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 98535 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:45:14 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:45:14 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:45:14 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:45:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:45:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 MongoDB repository interface.
+2024-10-23 15:45:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:45:15 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:45:15 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:45:15 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:45:15 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:45:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 554 ms
+2024-10-23 15:45:15 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.6.1"}, "platform": "Java/Oracle Corporation/22.0.1+8-16"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='Rishi', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@4d2eff39, com.mongodb.Jep395RecordCodecProvider@3aee1d51, com.mongodb.KotlinCodecProvider@3872f019]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=shopsmart.ubphc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-xoqf9h-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-10-23 15:45:15 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-01.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:45:15 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-00.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:45:15 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-02.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:45:15 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-23 15:45:15 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:45:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-23 15:45:15 INFO  s.e.n.i.o.OtpServiceApplication - Started OtpServiceApplication in 1.237 seconds (process running for 1.422)
+2024-10-23 15:45:25 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-01.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:45:25 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-02.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:45:25 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-00.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:46:05 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 99223 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:46:05 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:46:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:46:05 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:46:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:46:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 MongoDB repository interface.
+2024-10-23 15:46:06 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:46:06 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:46:06 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:46:06 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:46:06 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:46:06 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 540 ms
+2024-10-23 15:46:06 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.6.1"}, "platform": "Java/Oracle Corporation/22.0.1+8-16"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='Rishi', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@68bf819f, com.mongodb.Jep395RecordCodecProvider@12cfbb4f, com.mongodb.KotlinCodecProvider@6ff51b86]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=shopsmart.ubphc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-xoqf9h-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-10-23 15:46:06 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-01.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:46:06 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-00.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:46:06 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-02.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:46:06 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-23 15:46:09 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:46:09 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-23 15:46:09 INFO  s.e.n.i.o.OtpServiceApplication - Started OtpServiceApplication in 4.135 seconds (process running for 4.356)
+2024-10-23 15:46:16 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-01.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:46:16 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-02.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:46:16 INFO  org.mongodb.driver.cluster - Exception in monitor thread while connecting to server shopsmart-shard-00-00.ubphc.mongodb.net:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.lambda$open$0(SocketStream.java:86)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:86)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:201)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:193)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:153)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:752)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:76)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:105)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:80)
+	... 4 common frames omitted
+2024-10-23 15:53:27 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-00.ubphc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=277265292, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-00.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67094cb9e7a16ca406234e0a, counter=4}, lastWriteDate=Wed Oct 23 15:53:27 SGT 2024, lastUpdateTimeNanos=59777137454166}
+2024-10-23 15:53:27 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-01.ubphc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=296175334, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-01.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67094d5daa1504d26a503d02, counter=3}, lastWriteDate=Wed Oct 23 15:53:27 SGT 2024, lastUpdateTimeNanos=59777137449916}
+2024-10-23 15:53:28 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-02.ubphc.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=151523042, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-02.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000011, setVersion=1, topologyVersion=TopologyVersion{processId=67094d0be9c38062cab166fd, counter=6}, lastWriteDate=Wed Oct 23 15:53:28 SGT 2024, lastUpdateTimeNanos=59778364196833}
+2024-10-23 15:53:28 INFO  org.mongodb.driver.cluster - Discovered replica set primary shopsmart-shard-00-02.ubphc.mongodb.net:27017 with max election id 7fffffff0000000000000011 and max set version 1
+2024-10-23 15:53:36 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 5581 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 15:53:36 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 15:53:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 15:53:36 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 15:53:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 15:53:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 32 ms. Found 1 MongoDB repository interface.
+2024-10-23 15:53:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 15:53:37 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:53:37 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 15:53:37 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 15:53:37 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 15:53:37 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 582 ms
+2024-10-23 15:53:37 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.6.1"}, "platform": "Java/Oracle Corporation/22.0.1+8-16"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='Rishi', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@3f285de5, com.mongodb.Jep395RecordCodecProvider@1f493813, com.mongodb.KotlinCodecProvider@68bf819f]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=shopsmart.ubphc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-xoqf9h-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-10-23 15:53:37 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-01.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:53:37 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-00.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:53:37 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-02.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 15:53:37 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-23 15:53:37 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-23 15:53:37 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-23 15:53:37 INFO  s.e.n.i.o.OtpServiceApplication - Started OtpServiceApplication in 1.406 seconds (process running for 1.623)
+2024-10-23 15:53:37 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-01.ubphc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=193936667, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-01.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67094d5daa1504d26a503d02, counter=3}, lastWriteDate=Wed Oct 23 15:53:37 SGT 2024, lastUpdateTimeNanos=59787454873000}
+2024-10-23 15:53:37 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-00.ubphc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=216409834, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-00.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67094cb9e7a16ca406234e0a, counter=4}, lastWriteDate=Wed Oct 23 15:53:37 SGT 2024, lastUpdateTimeNanos=59787454871500}
+2024-10-23 15:53:37 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-02.ubphc.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=221064292, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-02.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000011, setVersion=1, topologyVersion=TopologyVersion{processId=67094d0be9c38062cab166fd, counter=6}, lastWriteDate=Wed Oct 23 15:53:37 SGT 2024, lastUpdateTimeNanos=59787481863125}
+2024-10-23 15:53:37 INFO  org.mongodb.driver.cluster - Discovered replica set primary shopsmart-shard-00-02.ubphc.mongodb.net:27017 with max election id 7fffffff0000000000000011 and max set version 1
+2024-10-23 15:53:49 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-23 15:53:49 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-23 15:53:49 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-10-23 15:53:53 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 82 ms
+2024-10-23 16:09:39 INFO  s.e.n.i.o.OtpServiceApplication - Starting OtpServiceApplication using Java 22.0.1 with PID 18838 (/Users/inderpreet/ELK_SO_FAR/otp-service/target/classes started by inderpreet in /Users/inderpreet/ELK_SO_FAR/otp-service)
+2024-10-23 16:09:39 INFO  s.e.n.i.o.OtpServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-23 16:09:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-10-23 16:09:39 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-10-23 16:09:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-10-23 16:09:39 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 1 MongoDB repository interface.
+2024-10-23 16:09:40 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-23 16:09:40 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-10-23 16:09:40 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-23 16:09:40 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-23 16:09:40 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-23 16:09:40 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 559 ms
+2024-10-23 16:09:40 INFO  org.mongodb.driver.client - MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync", "version": "5.0.1"}, "os": {"type": "Darwin", "name": "Mac OS X", "architecture": "aarch64", "version": "14.6.1"}, "platform": "Java/Oracle Corporation/22.0.1+8-16"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=majority, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=MongoCredential{mechanism=null, userName='Rishi', source='admin', password=<hidden>, mechanismProperties=<hidden>}, transportSettings=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@d154ca2, com.mongodb.Jep395RecordCodecProvider@352bf5f8, com.mongodb.KotlinCodecProvider@59e3e1ba]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[127.0.0.1:27017], srvHost=shopsmart.ubphc.mongodb.net, srvServiceName=mongodb, mode=MULTIPLE, requiredClusterType=REPLICA_SET, requiredReplicaSetName='atlas-xoqf9h-shard-0', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='15 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, proxySettings=ProxySettings{host=null, port=null, username=null, password=null}}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=true, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=UNSPECIFIED, serverApi=null, autoEncryptionSettings=null, dnsClient=null, inetAddressResolver=null, contextProvider=null}
+2024-10-23 16:09:40 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-01.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 16:09:40 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-00.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 16:09:40 INFO  org.mongodb.driver.cluster - Adding discovered server shopsmart-shard-00-02.ubphc.mongodb.net:27017 to client view of cluster
+2024-10-23 16:09:40 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-10-23 16:09:43 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-10-23 16:09:43 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-23 16:09:43 INFO  s.e.n.i.o.OtpServiceApplication - Started OtpServiceApplication in 3.758 seconds (process running for 3.987)
+2024-10-23 16:09:43 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-02.ubphc.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=291051791, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-02.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az3'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000011, setVersion=1, topologyVersion=TopologyVersion{processId=67094d0be9c38062cab166fd, counter=6}, lastWriteDate=Wed Oct 23 16:09:43 SGT 2024, lastUpdateTimeNanos=60752824817250}
+2024-10-23 16:09:43 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-00.ubphc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=291090125, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-00.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az1'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67094cb9e7a16ca406234e0a, counter=4}, lastWriteDate=Wed Oct 23 16:09:43 SGT 2024, lastUpdateTimeNanos=60752824852125}
+2024-10-23 16:09:43 INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=shopsmart-shard-00-01.ubphc.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=291078625, setName='atlas-xoqf9h-shard-0', canonicalAddress=shopsmart-shard-00-01.ubphc.mongodb.net:27017, hosts=[shopsmart-shard-00-02.ubphc.mongodb.net:27017, shopsmart-shard-00-01.ubphc.mongodb.net:27017, shopsmart-shard-00-00.ubphc.mongodb.net:27017], passives=[], arbiters=[], primary='shopsmart-shard-00-02.ubphc.mongodb.net:27017', tagSet=TagSet{[Tag{name='availabilityZone', value='apse1-az2'}, Tag{name='diskState', value='READY'}, Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTHEAST_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=1, topologyVersion=TopologyVersion{processId=67094d5daa1504d26a503d02, counter=3}, lastWriteDate=Wed Oct 23 16:09:43 SGT 2024, lastUpdateTimeNanos=60752824851750}
+2024-10-23 16:09:43 INFO  org.mongodb.driver.cluster - Discovered replica set primary shopsmart-shard-00-02.ubphc.mongodb.net:27017 with max election id 7fffffff0000000000000011 and max set version 1
+2024-10-23 16:09:56 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-23 16:09:56 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-23 16:09:56 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-23 16:09:56 INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 87 ms
+2024-10-23 16:10:06 INFO  s.e.n.i.o.controller.OtpController - {"message": "Generating OTP for email: 8444.sa@gmail.com"}
+2024-10-23 16:10:06 INFO  s.e.n.i.o.service.OtpService - Generating OTP
+2024-10-23 16:10:06 INFO  s.e.n.i.o.service.SmtpService - Sending OTP to email: 8444.sa@gmail.com
+2024-10-23 16:10:10 INFO  s.e.n.i.o.service.SmtpService - OTP sent to email: 8444.sa@gmail.com
+2024-10-23 16:10:10 INFO  s.e.n.i.o.service.OtpService - OTP sent to email: 8444.sa@gmail.com
+2024-10-23 16:10:37 INFO  s.e.n.i.o.controller.OtpController - {"message": "Validating OTP for email: 8444.sa@gmail.com"}
+2024-10-23 16:10:37 INFO  s.e.n.i.o.service.OtpService - OTP validated successfully.
+2024-10-23 16:10:40 INFO  s.e.n.i.o.controller.OtpController - {"message": "Validating OTP for email: 8444.sa@gmail.com"}
+2024-10-23 16:10:40 ERROR s.e.n.i.o.service.OtpService - No OTP found for the provided email.
